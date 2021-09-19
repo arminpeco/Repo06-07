@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards gallery</title>
+</head>
+<body>
+    <h2>Cards gallery</h2>
+    <main class="main">
+      <section class="container">
+            
+           <div>
+               <img src="../photos/image1.jpg" alt="image1" onclick="onClick(this)">
+                <h4>Lorem ipsum</h4> 
+                <p >
+                   lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                     </p> 
+            </div> 
+           <div><img src="../photos/image2.jpg" alt="image2" onclick="onClick(this)">
+            <h4>Lorem ipsum</h4><p> 
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+           <div><img src="../photos/image3.jpg" alt="image3" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+            lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+            
+        </section>
+        <section class="container">
+            
+            <div><img src="../photos/image4.jpg" alt="image4" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+            <div><img src="../photos/image5.jpg" alt="image5" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+            <div><img src="../photos/image6.jpg" alt="image6" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+             
+         </section>
+         <section class="container">
+            
+            <div><img src="../photos/image7.jpg" alt="image7" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+            <div><img src="../photos/image8.jpg" alt="image8" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+            <div><img src="../photos/image9.jpg"  alt="image9" onclick="onClick(this)"><h4>Lorem ipsum</h4><p>
+                lorem ipsum ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p></div> 
+                
+             
+         </section>
+        
+        </div>
+        <div id="modal"  onclick="this.style.display='none'">
+            <div id="modal-content"><img  id="img" style="width:100%"></div>
+          </div>
+    </main>
+</body>
+<script>
+function onClick(element) {
+  document.getElementById("img").src = element.src;
+  document.getElementById("modal").style.display = "block";
+}
+</script>
+</html>
